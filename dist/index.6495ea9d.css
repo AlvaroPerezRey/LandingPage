@@ -1,9 +1,4 @@
 /* COLORES */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 @font-face {
   font-family: "Think Big";
   src: url("Think_Big.c72ae78d.ttf");
@@ -11,6 +6,11 @@
 @font-face {
   font-family: "RPG";
   src: url("rpg.56478d45.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 * {
   margin: 0;
@@ -52,4 +52,4 @@ nav ul li a:hover {
 .content {
   text-align: center;
 }
-/*# sourceMappingURL=index.b10d73a7.css.map */
+/*# sourceMappingURL=index.6495ea9d.css.map */

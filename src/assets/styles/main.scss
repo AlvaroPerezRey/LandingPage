@@ -1,0 +1,42 @@
+@import "imports/variables";
+@import "imports/fonts";
+@import "imports/mixins";
+@import "imports/resets";
+
+* {
+    @include resetStyles;
+}
+
+body {
+    background-color: $negro;
+    font-family: "RPG";
+    font-size: 20px
+}
+
+/** NAVBAR */
+nav {
+    background-color: #333;
+    @include flexCenter;
+
+    ul {
+      @include listaCentrada;
+      li {
+        display: inline;
+        font-family: "RPG", serif;
+        font-size: 20px;
+        a {
+          color: $verde;
+          text-decoration: $negro;
+          padding: 14px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
