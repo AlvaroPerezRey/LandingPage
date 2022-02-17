@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Think Big";
+  src: url("Think_Big.c72ae78d.ttf");
+}
+
+body {
+  background-color: #272727;
+  font-family: "Think Big";
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */

@@ -1,0 +1,14 @@
+@import "variables";
+@import "resets";
+@import "fonts";
+@import "mixins";
+
+body{
+    background-color: $primary-color;
+    font-family: "Think Big";
+
+}
+
+h1{
+    @include flexCenter;
+}
