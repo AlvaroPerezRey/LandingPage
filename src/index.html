@@ -6,22 +6,46 @@
     <link rel="stylesheet" href="assets/styles/main.scss">
   </head>
   <body>
-    <div class='container'>
-      <div id="navigation-bar">
-        <nav>
-          <ul>
-            <li><a href="#" id="logo">LOGO</a></li>
-            <li><a href=#>Home</a></li>
-            <li><a href=#>Characters</a></li>
-            <li><a href=#>Levels</a></li>
-            <li><a href=#>Contact</a></li>
-            <a href="#" id="menu-icon"></a>
+    <header>
+      <div class="navbar">
+        <nav class="navbar__container">
+          <a class="navbar__logo" href="#"><img src="/src/assets/images/Logo.png" width="50" height="50"/></a>
+          <a class="navbar__brand" href="#"><h1 class="navbar__brand">The Legend of AFDE</h1></a>
+          <input id="toggle-menu" class="navbar__hamburger__toggle" type="checkbox">
+          <label for="toggle-menu" class="navbar__hamburger__button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="navbar__list">
+            <li class="navbar__item"><a href="#story" class="navbar__link">Story</a></li>
+            <li class="navbar__item"><a href="#characters" class="navbar__link">Characters</a></li>
+            <li class="navbar__item"><a href="#maps" class="navbar__link">Maps</a></li>
+            <li class="navbar__item"><a href="#contact" class="navbar__link">Contact</a></li>
           </ul>
         </nav>
-      </div id=home>
-      <div class='content'>
-
       </div>
-    </div>
+    </header>
+    <main class="main">
+      <section id="story" class="section">
+        <h1>STORY</h1>
+        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+      </section>
+    
+      <section id="characters" class="section">
+        <h1>CHARACTERS</h1>
+        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+      </section>
+    
+      <section id="maps" class="section">
+        <h1>MAPS</h1>
+        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+      </section>
+    
+      <section id="contact" class="section">
+        <h1>CONTACT</h1>
+        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+      </section>
+    </main>
   </body>
 </html>

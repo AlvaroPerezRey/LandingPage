@@ -1,4 +1,5 @@
 /* COLORES */
+/* NAVBAR */
 @font-face {
   font-family: "Think Big";
   src: url("Think_Big.c72ae78d.ttf");
@@ -22,34 +23,165 @@ body {
   font-family: "RPG";
   font-size: 20px;
 }
-/** NAVBAR */
-nav {
-  background-color: #333;
+a {
+  color: #faca1e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 3px;
+}
+a:hover {
+  color: #faca1e;
+}
+.navbar {
+  background: #2c2c2c;
+  /* RESPONSIVE */
+}
+.navbar__container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1250px;
 }
-nav ul {
-  text-align: center;
-  list-style-type: none;
-  list-style-type: none;
+.navbar__brand {
+  font-size: 2.25rem;
+  width: 100%;
+  margin-left: 1%;
+}
+.navbar__list {
+  display: flex;
   margin: 0;
-  padding: 15px;
+  padding: 0;
+  list-style-type: none;
+  transition: left 0.3s ease-in;
 }
-nav ul li {
-  display: inline;
-  font-family: "RPG", serif;
-  font-size: 20px;
+.navbar__item {
+  margin-right: 2rem;
 }
-nav ul li a {
-  color: #bec5bf;
-  text-decoration: rgba(19, 18, 18, 0.067);
-  padding: 14px;
+.navbar__item:last-child {
+  margin-right: 0;
 }
-nav ul li a:hover {
+.navbar__link {
+  display: block;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.navbar__link:hover {
   text-decoration: underline;
 }
-.content {
-  text-align: center;
+.navbar__hamburger__toggle {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+.navbar__hamburger__toggle:checked ~ .navbar__list {
+  left: 0;
+}
+.navbar__hamburger__toggle:checked ~ .navbar__hamburger__button > span:nth-child(1) {
+  transform: translateY(12px) rotate(135deg);
+}
+.navbar__hamburger__toggle:checked ~ .navbar__hamburger__button > span:nth-child(2) {
+  transform: scale(0);
+}
+.navbar__hamburger__toggle:checked ~ .navbar__hamburger__button > span:nth-child(3) {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.navbar__hamburger__button {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+}
+.navbar__hamburger__button:hover span {
+  background: #faca1e;
+}
+.navbar__hamburger__button span {
+  position: absolute;
+  display: block;
+  margin: 7px 0;
+  height: 5px;
+  width: 100%;
+  border-radius: 3px;
+  background: #faca1e;
+  transition: all 0.3s ease-in-out;
+}
+.navbar__hamburger__button span:nth-child(1) {
+  top: 0;
+}
+.navbar__hamburger__button span:nth-child(2) {
+  top: 12px;
+}
+.navbar__hamburger__button span:nth-child(3) {
+  top: 24px;
+}
+@media screen and (max-width: 1250px) {
+  .navbar__container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar .navbar__link {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar__brand {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar__link {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar__list {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    background: #2c2c2c;
+  }
+  .navbar__brand {
+    font-size: 1.5rem;
+  }
+  .navbar__item {
+    margin: 0;
+  }
+  .navbar__link {
+    padding: 2rem 0;
+    transition: background 0.3s ease;
+  }
+  .navbar__link:hover {
+    background: #2c2c2c;
+    color: #faca1e;
+  }
+  .navbar__hamburger__button {
+    display: inline-block;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.main #story, .main #characters, .main #maps, .main #contact {
+  background-color: #584f4f;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.section__image {
+  display: inline-flex;
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=index.6495ea9d.css.map */
