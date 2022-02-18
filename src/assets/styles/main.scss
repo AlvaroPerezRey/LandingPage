@@ -202,16 +202,71 @@ a {
     background-color: #584f4f;
   }
 }
+/*** T H E - M A G I C - O F - O B J E C T - F I T ***/
+/*****************************************************/
 
-.section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
+.video-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  @media(min-width: 600px) {
+    height: 100vh;
+  }
 }
 
-.section__image {
-  display: inline-flex;
-  max-width: 100%;
-  height: auto;
+video {
+  object-fit: cover; // Set the magic
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*** A E S T H E T I C S ***/
+/***************************/
+
+
+#story {
+  background: #333;
+  color: white;
+}
+
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(rgb(90, 90, 90), .8);
+  z-index: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1;
+  font-size: 5vw;
+  color: #faca1e;
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 75px;
+  }
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
 }
