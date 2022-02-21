@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Landing_Page</title>
     <link rel="stylesheet" href="assets/styles/main.scss">
+    <script src="/src/assets/scripts/scripts.js"></script>
   </head>
   <body>
     <header>
@@ -40,36 +41,42 @@
       <section id="characters" class="section">
         <div>
         <h1>CHARACTERS</h1>
-        <div id="slider-wrapper">
-          <div id="image-slider">
-            <ul>
-              <li class="active-img">
-                <img src="/src/assets/images/Mapa_1.png" alt="" />
-              </li>
-              <li>
-                <img src="/src/assets/images/Mapa_3.png" alt="" />
-              </li>
-              <li>
-                <img src="/src/assets/images/Mapa_1.png" alt="" />
-              </li>									
-            </ul>
-      
-          </div>
-      
-          <div id="thumbnail">
-            <ul>
-              <li class="active"><img src="/src/assets/images/Mapa_1.png" alt="" /></li>
-              <li><img src="/src/assets/images/Mapa_3.png" alt="" /></li>
-              <li><img src="/src/assets/images/Mapa_1.png" alt="" /></li>	
-            </ul>
-          </div>
+        <div class="container">
+          <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
+          <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="" />
+          <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
+        
         </div>
+
       </div>
       </section>
     
       <section id="maps" class="section">
+        <div>
         <h1>MAPS</h1>
-        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+        <div class="tabs">
+          <input type="radio" name="tabs" id="tabone" checked="checked">
+          <label for="tabone">MAP 1</label>
+          <div class="tab">
+            <h1>MAP 1</h1>
+            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
+          </div>
+          
+          <input type="radio" name="tabs" id="tabtwo">
+          <label for="tabtwo">MAP 2</label>
+          <div class="tab">
+            <h1>MAP 2</h1>
+            <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="" />
+          </div>
+          
+          <input type="radio" name="tabs" id="tabthree">
+          <label for="tabthree">MAP 3</label>
+          <div class="tab">
+            <h1>MAP 3</h1>
+            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
+          </div>
+        </div>
+        </div>
       </section>
     
       <section id="contact" class="section">
