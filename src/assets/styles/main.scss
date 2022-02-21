@@ -303,6 +303,13 @@ a {
 
 #characters{
   display: flex;
+  justify-content: center;
+  h1{
+    font-size: 5vw;
+    color: #faca1e;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding-top: 2%;
+  }
 }
 
 #slider-wrapper{
