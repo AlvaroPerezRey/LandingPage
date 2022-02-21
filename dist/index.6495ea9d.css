@@ -50,6 +50,9 @@ a:hover {
   width: 100%;
   margin-left: 1%;
 }
+.navbar__brand h1 {
+  font-weight: lighter;
+}
 .navbar__list {
   display: flex;
   margin: 0;
@@ -62,6 +65,9 @@ a:hover {
 }
 .navbar__item:last-child {
   margin-right: 0;
+}
+.navbar__item h3 {
+  font-weight: lighter;
 }
 .navbar__link {
   display: block;
@@ -199,7 +205,7 @@ video {
   background: #333;
   color: white;
 }
-.video-container:after {
+#story .video-container:after {
   content: "";
   display: block;
   height: 100%;
@@ -207,28 +213,10 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(90, 90, 90, 0.8);
+  background: rgba(90, 90, 90, 0.9);
   z-index: 1;
 }
-h1 {
-  text-transform: uppercase;
-  font-weight: 900;
-  padding: 0;
-  line-height: 1;
-  font-size: 5vw;
-  color: #faca1e;
-}
-@media (max-width: 400px) {
-  h1 {
-    font-size: 22px;
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 75px;
-  }
-}
-.callout {
+#story .callout {
   position: relative;
   display: flex;
   justify-content: center;
@@ -238,5 +226,29 @@ h1 {
   text-align: center;
   position: relative;
   z-index: 10;
+}
+#story .callout h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 5vw;
+  color: #faca1e;
+}
+@media (max-width: 400px) {
+  #story .callout h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  #story .callout h1 {
+    font-size: 75px;
+  }
+}
+#story .callout div {
+  margin: 3% 0% 0% 0%;
+  width: 80%;
+  color: black;
 }
 /*# sourceMappingURL=index.6495ea9d.css.map */
