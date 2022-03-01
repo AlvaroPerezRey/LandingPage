@@ -20,9 +20,8 @@
           </label>
           <ul class="navbar__list">
             <li class="navbar__item"><h3><a href="#story" class="navbar__link">Story</a></h3></li>
-            <li class="navbar__item"><h3><a href="#characters" class="navbar__link">Characters</a></h3></li>
             <li class="navbar__item"><h3><a href="#maps" class="navbar__link">Maps</a></h3></li>
-            <li class="navbar__item"><h3><a href="#contact" class="navbar__link">Contact</a></h3></li>
+            <li class="navbar__item"><h3><a href="#characters" class="navbar__link">Characters</a></h3></li>
           </ul>
         </nav>
       </div>
@@ -38,50 +37,57 @@
         </section>
       </section>
     
-      <section id="characters" class="section">
-        <div>
-        <h1>CHARACTERS</h1>
-        <div class="container">
-          <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
-          <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="" />
-          <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
-        
-        </div>
-
-      </div>
-      </section>
-    
       <section id="maps" class="section">
-        <div>
-        <h1>MAPS</h1>
-        <div class="tabs">
-          <input type="radio" name="tabs" id="tabone" checked="checked">
-          <label for="tabone">MAP 1</label>
-          <div class="tab">
-            <h1>MAP 1</h1>
-            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
+        <div class="container_map">
+          <h1>MAPS</h1>
+          <div class="container">
+            <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="Mapa_3" />
+            <img class='photo'  src="/src/assets/images/Mapa_2.png" alt="Mapa_2" />
+            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="Mapa_1" />
           </div>
-          
-          <input type="radio" name="tabs" id="tabtwo">
-          <label for="tabtwo">MAP 2</label>
-          <div class="tab">
-            <h1>MAP 2</h1>
-            <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="" />
+          <div class="description_maps">
+            <h3 class="titulo_maps"> Descripcion</h3>
+            <div class="description">
+              Estos son los diferentes mapas que estarán presentes en nuestro juego, comenzando desde el primer mapa donde comenzaremos en una playa pasando por un bosque colorido y llegando hasta un escenario de origen volcanico donde podremos encontrarnos con uno de los jefes.
+            </div>
           </div>
-          
-          <input type="radio" name="tabs" id="tabthree">
-          <label for="tabthree">MAP 3</label>
-          <div class="tab">
-            <h1>MAP 3</h1>
-            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="" />
-          </div>
-        </div>
         </div>
       </section>
     
-      <section id="contact" class="section">
-        <h1>CONTACT</h1>
-        <img src="/src/assets/images/Mapa_1.png" class="section__image"/>
+      <section id="characters" class="section">
+        <div class="container_characters">
+          <h1>CHARACTERS</h1>
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <label for="tabone">Character 1</label>
+            <div class="tab">
+              <img class='photo'  src="/src/assets/images/DragonRojo.svg" alt="" />
+            </div>
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo">Character 2</label>
+            <div class="tab">
+              <img class='photo'  src="/src/assets/images/personaje.svg" alt="" />
+            </div>
+          </div>
+          <div class="description_characters">
+            <h3 class="titulo_characters"> Descripcion</h3>
+            <div class="description">
+              Estos son los diferentes mapas que estarán presentes en nuestro juego, comenzando desde el primer mapa donde comenzaremos en una playa pasando por un bosque colorido y llegando hasta un escenario de origen volcanico donde podremos encontrarnos con uno de los jefes.
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="footer" class="section">
+        <footer>
+          <ul class="footer_links">
+              <li><a href="#">PRIVACIDAD</a></li>
+              <li><a href="#">COOKIES</a></li>
+              <li><a href="#">CONTACTO</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">AVISO LEGAL</a></li>
+          </ul>
+      </footer>
       </section>
     </main>
   </body>

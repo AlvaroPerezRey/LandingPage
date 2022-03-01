@@ -53,7 +53,7 @@ a {
 
   &__list {
     display: flex;
-    margin: 0;
+    margin-right: 5%;
     padding: 0;
     list-style-type: none;
     transition: left $nav-transition-time ease-in;
@@ -61,7 +61,7 @@ a {
   }
 
   &__item {
-    margin-right: 2rem;
+    margin-right: 5rem;
 
     &:last-child {
       margin-right: 0;
@@ -73,7 +73,7 @@ a {
 
   &__link {
     display: block;
-    font-size: 2.25rem;
+    font-size: 2.00rem;
     text-align: center;
     &:hover {
       text-decoration: underline;
@@ -213,8 +213,8 @@ a {
   #story,
   #characters,
   #maps,
-  #contact {
-    background-color: #584f4f;
+  #footer {
+    background-color: $fondo;
     display: flex;
   }
 }
@@ -228,7 +228,7 @@ a {
   }
 
   video {
-    object-fit: cover; // Set the magic
+    object-fit: cover;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -242,8 +242,6 @@ a {
 // ==================================================
 
 #story {
-  background: #333;
-  color: white;
 
   .video-container:after {
     content: "";
@@ -275,7 +273,7 @@ a {
       line-height: 1;
       text-shadow: black 0.1em 0.1em 0.2em;
       font-size: 5vw;
-      color: #faca1e;
+      color: $amarillo;
       @media (max-width: 400px) {
         font-size: 22px;
       }
@@ -301,31 +299,31 @@ a {
 }
 
 // ==================================================
-// CHARACTERS
+// MAPS
 // ==================================================
 
-#characters {
+#maps {
   display: flex;
   justify-content: center;
   h1 {
     font-size: 5vw;
-    color: #faca1e;
+    color: $amarillo;
     text-shadow: black 0.1em 0.1em 0.2em;
     padding-top: 2%;
     text-align: center;
   }
 
-  //how many images we have
+  //numero de imagenes que vamos a tener
   $slides: 3;
 
-  // how much we want each slide to show
-  $time_per_slide: 5;
+  // segundos que la imagen va a estar visible
+  $time_per_slide: 8;
 
-  // total time needed for full animation
+  // tiempo total de todo el slider
   $total_animation_time: $time_per_slide * $slides;
 
   .container {
-    margin: 50px auto;
+    margin: 25px auto;
     width: 800px;
     height: 600px;
     overflow: hidden;
@@ -348,7 +346,6 @@ a {
       opacity: 0;
     }
   }
-
   @for $index from 1 to $slides + 1 {
     img:nth-child(#{$index}) {
       animation-delay: #{$total_animation_time - $time_per_slide * $index}s;
@@ -356,61 +353,162 @@ a {
   }
 }
 
-#maps {
+.container_map{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 100px 50px 100px;
+  .description_maps{
+    background: darkgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: 800px;
+  }
+  .titulo_maps {
+      text-align: center;
+      width: 100%;
+      padding-top: 5px;
+  }
+  .description{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2c2c2c;
+    padding: 0px 5px 5px 5px;
+  }
+  
+}
+
+#characters {
   display: flex;
   justify-content: center;
   h1 {
     font-size: 5vw;
-    color: #faca1e;
+    color: $amarillo;
     text-shadow: black 0.1em 0.1em 0.2em;
     padding-top: 2%;
     text-align: center;
   }
-  /**
- * Tabs
- */
-.tabs {
-	display: flex;
-	flex-wrap: wrap; // make sure it wraps
-}
-.tabs label {
-	order: 1; // Put the labels first
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-	cursor: pointer;
-  background: #90CAF9;
-  font-weight: bold;
-  transition: background ease 0.2s;
-}
-.tabs .tab {
-  order: 99; // Put the tabs last
-  flex-grow: 1;
-	width: 100%;
-	display: none;
-  padding: 1rem;
-  background: #fff;
-}
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	background: #fff;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
-}
+  .tabs {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 800px;
+    margin: 25px auto;
 
-@media (max-width: 45em) {
-  .tabs .tab,
-  .tabs label {
-    order: initial;
+    .photo{
+      width: inherit;
+      border-radius: 5px;
+    }
   }
   .tabs label {
+    order: 1; 
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: darkgray;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid black;
+  }
+  .tabs .tab {
+    order: 99; 
+    flex-grow: 1;
     width: 100%;
-    margin-right: 0;
-    margin-top: 0.2rem;
+    display: none;
+    padding: 1rem;
+    background: darkgray;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid black;
   }
+  .tabs input[type="radio"] {
+    display: none;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .tabs input[type="radio"]:checked + label {
+    background: #fff;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+    border-radius: 0px 5px 5px 5px;
+  }
+
+  .container_characters{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 100px 50px 100px;
+    .titulo_characters {
+      text-align: center;
+      width: 100%;
+      padding-top: 5px;
+  }
+    .description_characters{
+      background: darkgray;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+      width: 800px;
+    }
+    .description{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #2c2c2c;
+      padding: 0px 5px 5px 5px;
+    }
+  
+  }
+
+  @media (max-width: 45em) {
+    .tabs .tab,
+    .tabs label {
+      order: initial;
+    }
+    .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+
 }
 
+// ==================================================
+// FOOTER
+// ==================================================
+
+#footer{
+  width: 100%;
+  footer{
+      width: 100%;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c2c2c;
+  }
+
+  .logo_footer{
+      float: left;
+      padding: 15px 3%;
+  }
+  .footer_links{
+    width: 100%;
+    margin: 25px auto;
+    text-align: center;
+  }
+  .footer_links li a{
+      font-size: 16px;
+      background-color: #2c2c2c;
+      color: $amarillo;
+      text-decoration: none;
+  }
+
+  .footer_links{
+      list-style: none;
+  }
+
+  .footer_links li{
+      display: inline-block;
+      padding: 0px 40px;
+  }
 }
