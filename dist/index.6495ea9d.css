@@ -283,7 +283,7 @@ a:hover {
 #maps .photo {
   position: absolute;
   border-radius: 5px;
-  animation: round 24s infinite;
+  animation: round 12s infinite;
   opacity: 0;
 }
 @keyframes round {
@@ -295,12 +295,21 @@ a:hover {
   }
 }
 #maps img:nth-child(1) {
-  animation-delay: 16s;
+  animation-delay: 10s;
 }
 #maps img:nth-child(2) {
   animation-delay: 8s;
 }
 #maps img:nth-child(3) {
+  animation-delay: 6s;
+}
+#maps img:nth-child(4) {
+  animation-delay: 4s;
+}
+#maps img:nth-child(5) {
+  animation-delay: 2s;
+}
+#maps img:nth-child(6) {
   animation-delay: 0s;
 }
 #maps .container_map {

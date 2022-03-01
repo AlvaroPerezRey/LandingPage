@@ -1,26 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Landing_Page</title>
-    <link rel="stylesheet" href="assets/styles/main.scss">
+    <link rel="stylesheet" href="assets/styles/main.scss" />
   </head>
   <body>
     <header>
       <div class="navbar">
         <nav class="navbar__container">
-          <a class="navbar__logo" href="#"><img src="/src/assets/images/Logo.png" width="50" height="50"/></a>
-          <a class="navbar__brand" href="#"><h1 class="navbar__brand">The Legend of AFDE</h1></a>
-          <input id="toggle-menu" class="navbar__hamburger__toggle" type="checkbox">
+          <a class="navbar__logo" href="#"
+            ><img src="/src/assets/images/Logo.png" width="50" height="50"
+          /></a>
+          <a class="navbar__brand" href="#"
+            ><h1 class="navbar__brand">The Legend of AFDE</h1></a
+          >
+          <input
+            id="toggle-menu"
+            class="navbar__hamburger__toggle"
+            type="checkbox"
+          />
           <label for="toggle-menu" class="navbar__hamburger__button">
             <span></span>
             <span></span>
             <span></span>
           </label>
           <ul class="navbar__list">
-            <li class="navbar__item"><h3><a href="#story" class="navbar__link">Story</a></h3></li>
-            <li class="navbar__item"><h3><a href="#maps" class="navbar__link">Maps</a></h3></li>
-            <li class="navbar__item"><h3><a href="#characters" class="navbar__link">Characters</a></h3></li>
+            <li class="navbar__item">
+              <h3><a href="#story" class="navbar__link">Story</a></h3>
+            </li>
+            <li class="navbar__item">
+              <h3><a href="#maps" class="navbar__link">Maps</a></h3>
+            </li>
+            <li class="navbar__item">
+              <h3><a href="#characters" class="navbar__link">Characters</a></h3>
+            </li>
           </ul>
         </nav>
       </div>
@@ -28,65 +42,115 @@
     <main class="main">
       <section id="story" class="section">
         <section class="video-container">
-          <video src="/src/assets/video/video.webm" autoplay loop playsinline muted></video>
+          <video
+            src="/src/assets/video/video.webm"
+            autoplay
+            loop
+            playsinline
+            muted
+          ></video>
           <div class="callout">
             <h1>STORY</h1>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, consequatur, beatae repellat laborum, ab deserunt perferendis labore possimus minus dolore placeat obcaecati illum quidem quos! Facere fugiat labore eligendi deserunt.</p></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                consequatur, beatae repellat laborum, ab deserunt perferendis
+                labore possimus minus dolore placeat obcaecati illum quidem
+                quos! Facere fugiat labore eligendi deserunt.
+              </p>
+            </div>
           </div>
         </section>
       </section>
-    
+
       <section id="maps" class="section">
         <div class="container_map">
           <h1>MAPS</h1>
           <div class="container">
-            <img class='photo'  src="/src/assets/images/Mapa_3.png" alt="Mapa_3" />
-            <img class='photo'  src="/src/assets/images/Mapa_2.png" alt="Mapa_2" />
-            <img class='photo'  src="/src/assets/images/Mapa_1.png" alt="Mapa_1" />
+            <img
+              class="photo"
+              src="/src/assets/images/Mapa_3.png"
+              alt="Mapa_3"
+            />
+            <img
+              class="photo"
+              src="/src/assets/images/Mapa_2.png"
+              alt="Mapa_2"
+            />
+            <img
+            srcset="
+            /src/assets/images/Mapa_1_r3.png 500w,
+            /src/assets/images/Mapa_1_r2.png 600w,
+            /src/assets/images/Mapa_1_r1.png 700w,
+            /src/assets/images/Mapa_1.png
+            "
+            sizes="(max-width: 540px) 500px,
+          (max-width: 640px) 600px,
+          (max-width: 840px) 800px,
+          1000px"
+            src="/src/assets/images/Mapa_1.png"
+            alt="Mapa_1"
+          />
           </div>
           <div class="description_maps">
-            <h3 class="titulo_maps"> Descripcion</h3>
+            <h3 class="titulo_maps">Descripcion</h3>
             <div class="description">
-              Estos son los diferentes mapas que estarán presentes en nuestro juego, comenzando desde el primer mapa donde comenzaremos en una playa pasando por un bosque colorido y llegando hasta un escenario de origen volcanico donde podremos encontrarnos con uno de los jefes.
+              Estos son los diferentes mapas que estarán presentes en nuestro
+              juego, comenzando desde el primer mapa donde comenzaremos en una
+              playa pasando por un bosque colorido y llegando hasta un escenario
+              de origen volcanico donde podremos encontrarnos con uno de los
+              jefes.
             </div>
           </div>
         </div>
       </section>
-    
+
       <section id="characters" class="section">
         <div class="container_characters">
           <h1>CHARACTERS</h1>
           <div class="tabs">
-            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <input type="radio" name="tabs" id="tabone" checked="checked" />
             <label for="tabone">Character 1</label>
             <div class="tab">
-              <img class='photo'  src="/src/assets/images/DragonRojo.svg" alt="" />
+              <img
+                class="photo"
+                src="/src/assets/images/DragonRojo.svg"
+                alt=""
+              />
             </div>
-            <input type="radio" name="tabs" id="tabtwo">
+            <input type="radio" name="tabs" id="tabtwo" />
             <label for="tabtwo">Character 2</label>
             <div class="tab">
-              <img class='photo'  src="/src/assets/images/personaje.svg" alt="" />
+              <img
+                class="photo"
+                src="/src/assets/images/personaje.svg"
+                alt=""
+              />
             </div>
           </div>
           <div class="description_characters">
-            <h3 class="titulo_characters"> Descripcion</h3>
+            <h3 class="titulo_characters">Descripcion</h3>
             <div class="description">
-              Estos son los diferentes mapas que estarán presentes en nuestro juego, comenzando desde el primer mapa donde comenzaremos en una playa pasando por un bosque colorido y llegando hasta un escenario de origen volcanico donde podremos encontrarnos con uno de los jefes.
+              Estos son los diferentes mapas que estarán presentes en nuestro
+              juego, comenzando desde el primer mapa donde comenzaremos en una
+              playa pasando por un bosque colorido y llegando hasta un escenario
+              de origen volcanico donde podremos encontrarnos con uno de los
+              jefes.
             </div>
           </div>
         </div>
       </section>
-      
+
       <section id="footer" class="section">
         <footer>
           <ul class="footer_links">
-              <li><a href="#">PRIVACIDAD</a></li>
-              <li><a href="#">COOKIES</a></li>
-              <li><a href="#">CONTACTO</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">AVISO LEGAL</a></li>
+            <li><a href="#">PRIVACIDAD</a></li>
+            <li><a href="#">COOKIES</a></li>
+            <li><a href="#">CONTACTO</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">AVISO LEGAL</a></li>
           </ul>
-      </footer>
+        </footer>
       </section>
     </main>
   </body>
